@@ -1,0 +1,27 @@
+h1 {
+  text-align: center;
+  padding: 50px 0 0 0;
+}
+
+small {
+  padding: 20px 0 20px 0;
+  text-align: center;
+  font-style: italic;
+}
+
+.business-form {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 50%;
+
+  .inline {
+    display: grid;
+    grid-template-columns: 1fr 0.3fr;
+    grid-gap: 10px;
+  }
+
+  .mat-hint {
+    margin-left: -0.75em;
+  }
+}

@@ -1,0 +1,75 @@
+:host ::ng-deep {
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    max-width: 400px;
+    padding: 20px;
+  }
+
+  .content {
+    background: url('/assets/img/frontpage-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+}
+
+.login-wrapper,
+.register-wrapper {
+  position: relative;
+  height: 40%;
+  width: 100%;
+}
+
+.menu-icon {
+  color: #fff;
+  font-size: 2em;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+
+.welcome-title {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  h1 {
+    font-size: 3em;
+    font-weight: 900;
+  }
+}
+
+.arrow-icon {
+  font-size: 2em;
+  top: 15px;
+  left: 15px;
+  position: absolute;
+  color: #000;
+  cursor: pointer;
+}
+
+nav {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.actual-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  height: 100%;
+}
+
+.logo {
+  color: #fff;
+}

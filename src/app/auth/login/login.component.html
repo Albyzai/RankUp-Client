@@ -1,0 +1,27 @@
+<div id="login-component">
+  <h3>Login</h3>
+
+  <form (ngSubmit)="loginUser()">
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Email"
+        name="email"
+        type="email"
+        [(ngModel)]="email"
+      />
+    </mat-form-field>
+
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Password"
+        type="password"
+        [(ngModel)]="password"
+        name="password"
+      />
+    </mat-form-field>
+
+    <button type="submit" mat-raised-button color="primary">Login</button>
+  </form>
+</div>

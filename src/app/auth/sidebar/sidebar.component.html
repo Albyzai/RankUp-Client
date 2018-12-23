@@ -1,0 +1,32 @@
+<ng-sidebar-container
+  (onBackdropClicked)="_onBackdropClicked()"
+  [contentClass]="'content'"
+>
+  <!-- Actual sidebar -->
+  <ng-sidebar
+    [(opened)]="_opened"
+    [mode]="'push'"
+    [position]="'right'"
+    [sidebarClass]="'sidebar'"
+  >
+    <mat-icon (click)="_toggleOpened()" class="arrow-icon"
+      >subdirectory_arrow_right</mat-icon
+    >
+
+    <div class="login-wrapper"><app-login></app-login></div>
+
+    <div class="register-wrapper"><app-register></app-register></div>
+  </ng-sidebar>
+
+  <!-- Content -->
+  <div ng-sidebar-content>
+    <nav>
+      <div class="logo"><h1>RankUp</h1></div>
+
+      <mat-icon (click)="_toggleOpened()" class="menu-icon"> menu </mat-icon>
+    </nav>
+    <div class="actual-content">
+      <div class="welcome-title"><h1>Welcome to RankUP</h1></div>
+    </div>
+  </div>
+</ng-sidebar-container>

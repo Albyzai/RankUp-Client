@@ -1,0 +1,21 @@
+<div id="register-component">
+  <h3>Register</h3>
+  <mat-form-field>
+    <input matInput placeholder="Email" type="email" [(ngModel)]="email" />
+  </mat-form-field>
+
+  <mat-form-field>
+    <input
+      matInput
+      placeholder="Password"
+      type="password"
+      [(ngModel)]="password"
+    />
+  </mat-form-field>
+  <mat-checkbox [(ngModel)]="agreedToTerms">
+    I agree to the terms & conditions
+  </mat-checkbox>
+  <button mat-raised-button color="primary" (click)="registerUser()">
+    Register
+  </button>
+</div>
